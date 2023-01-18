@@ -10,10 +10,12 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <h1 id="title">HTML Cheatsheet</h1>
         <!-- Main Navigation -->
         <nav title="Main Navigation" class="main-nav">
             <ul class="menu-bar">
+                <li class="menu-item">
+                    <a id="home">HTML Cheatsheet</a>
+                </li>
                 <li class="menu-item">
                     <a id="html" href="index.html">HTML</a>
                 </li>
@@ -29,23 +31,21 @@
         <div class="page-nav">
                 <h2>TOPICS</h2>
                 <div class="page-anchor">
-                    <a href="#">Elements and Structure</a>
-                    <a href="#">Tables</a>
-                    <a href="#">Forms</a>
-                    <a href="#">Semantic HTML</a>
+                    <a href="#elements-structure">Elements and Structure</a>
+                    <a href="#tables">Tables</a>
+                    <a href="#forms">Forms</a>
+                    <a href="#semantic">Semantic HTML</a>
                 </div>
         </div>
         <!-- Cheat sheet -->
         <div class="container">
             <!-- Topics -->
-            <div class="elements-structure">
-                <!-- Elements and Structure -->
+            <!-- Elements and Structure -->
+            <div id="elements-structure" class="topic-one">
                 <div class="intro">
                     <h1>HTML</h1>
-                    <p>HTML (HyperText Markup Language) is used to give content to a web page and instructs 
-                        web browsers on how to structure that content.</p>
-                    <h3>Element Content</h3>
-                    <p>The content of an HTML element is the information between the opening and closing tags of an element.</p>
+                    <p>HTML (HyperText Markup Language) is used to give content to a web page and 
+                        instructs web browsers on how to structure that content.</p>
                 </div>
                 <!-- List elements -->
                 <div class="list">
@@ -70,10 +70,33 @@
                             <li>Thing three</li>
                         </ul>
                 </div>
-
             </div>
-            <div class="topic-two">
+            <!-- Tables -->
+            <div id="tables" class="topic-two">
                 <h1>TOPIC TWO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
+                    a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
+                    diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
+                    Vestibulum nulla eros, placerat at tempus ac, hendrerit tempus turpis. Duis imperdiet 
+                    velit in odio egestas condimentum. Nam non accumsan nisl, et viverra nisl. Vestibulum 
+                    dapibus, est in elementum semper, mauris risus ultrices elit, sit amet consequat dui lacus 
+                    mattis metus. Pellentesque lorem eros, eleifend at justo a, ultrices condimentum orci.</p>
+                
+            </div>
+            <!-- Forms -->
+            <div id="forms" class="topic-three">
+                <h1>TOPIC THREE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
+                    a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
+                    diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
+                    Vestibulum nulla eros, placerat at tempus ac, hendrerit tempus turpis. Duis imperdiet 
+                    velit in odio egestas condimentum. Nam non accumsan nisl, et viverra nisl. Vestibulum 
+                    dapibus, est in elementum semper, mauris risus ultrices elit, sit amet consequat dui lacus 
+                    mattis metus. Pellentesque lorem eros, eleifend at justo a, ultrices condimentum orci.</p>
+            </div>
+            <!-- Semantic -->
+            <div id="semantic" class="topic-four">
+                <h1>TOPIC FOUR</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
                     a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
                     diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
