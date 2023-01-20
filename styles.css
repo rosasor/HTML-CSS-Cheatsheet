@@ -6,13 +6,12 @@
 body {
     margin: 0px 500px;
     background-image: linear-gradient(rgb(130, 130, 245), rgb(255, 124, 135), rgb(194, 128, 255));
-    overflow: hidden;
 }
 
 main {
     padding: 100px 50px;
     background-color: white;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
