@@ -1,7 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 
 body {
@@ -62,10 +61,6 @@ main {
 }
 
 /* Main */
-/* .container {
-
-} */
-
 h1 {
     font-size: 35px;
 }
@@ -80,15 +75,6 @@ p {
 .topic-one {
     width: 100%;
 }
-
-/* .topic-one .intro {
-}
-
-.topic-one .intro h1 {
-}
-
-.topic-one .intro p {
-} */
 
 /* Table */
 table, th, td {
