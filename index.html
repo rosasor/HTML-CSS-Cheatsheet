@@ -14,10 +14,10 @@
         <nav title="Main Navigation" class="main-nav">
             <ul class="menu-bar">
                 <li class="menu-item">
-                    <a id="home">HTML Cheatsheet</a>
+                    <a id="home">Cheatsheet</a>
                 </li>
                 <li class="menu-item">
-                    <a id="html" href="index.html">HTML</a>
+                    <a id="html" class="active" href="index.html">HTML</a>
                 </li>
                 <li class="menu-item">
                     <a id="css" href="cheatcss.html">CSS</a>
@@ -27,84 +27,250 @@
     </header>
     <!-- Main -->
     <main class="main">
-        <!-- Page Navigation -->
-        <div class="page-nav">
-                <h2>TOPICS</h2>
-                <div class="page-anchor">
-                    <a href="#elements-structure">Elements and Structure</a>
-                    <a href="#tables">Tables</a>
-                    <a href="#forms">Forms</a>
-                    <a href="#semantic">Semantic HTML</a>
-                </div>
-        </div>
         <!-- Cheat sheet -->
         <div class="container">
-            <!-- Topics -->
-            <!-- Elements and Structure -->
-            <div id="elements-structure" class="topic-one">
+            <div class="topic-one">
+                <!-- Intro -->
                 <div class="intro">
-                    <h1>HTML</h1>
-                    <p>HTML (HyperText Markup Language) is used to give content to a web page and 
-                        instructs web browsers on how to structure that content.</p>
-                </div>
-                <!-- List elements -->
-                <div class="list">
-                    <h3>List Item Element</h3>
-                    <p>The list item element create list items inside Ordered lists and Unordered lists.</p>
-                    <h3>Ordered List Element</h3>
-                    <p>The ordered list element creates a list of items in sequential order. 
-                        Each list item appears numbered by default. Here is an example of an ordered list</p>
-                        <!-- Ordered List EG -->
-                        <ol>
-                            <li>Thing one</li>
-                            <li>Thing two</li>
-                            <li>Thing three</li>
-                        </ol>
-                    <h3>Unordered List Element</h3>
-                    <p>The unordered list element is used to create a list of items in no particular 
-                        order. Each individual list item will have a bullet point by default.</p>
-                        <!-- Unordered List EG -->
-                        <ul>
-                            <li>Thing one</li>
-                            <li>Thing two</li>
-                            <li>Thing three</li>
-                        </ul>
+                    <h1>What is HTML?</h1>
+                    <p>HTML (HyperText Markup Language) is used to give content to a web page and instructs web browsers on how to structure that content.</p>
+                    <h2>HTML Structure</h2>
+                    <p>HTML is organized into a family tree structure. HTML elements can have parents, grandparents, siblings, children, grandchildren, etc.</p>
+                    <h2>HTML Elements</h2>
+                    <p>An HTML element is a piece of content in an HTML document. The content of an HTML element is the information between the opening and 
+                        closing tags of an element.</p>
+                    <h2>HTML Attributes</h2>
+                    <p>Attributes are values added to the opening tag of an element to configure the element, change the elements default behavior or provide 
+                        additional information about elements.</p>
                 </div>
             </div>
+            <hr> 
             <!-- Tables -->
-            <div id="tables" class="topic-two">
-                <h1>TOPIC TWO</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
-                    a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
-                    diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
-                    Vestibulum nulla eros, placerat at tempus ac, hendrerit tempus turpis. Duis imperdiet 
-                    velit in odio egestas condimentum. Nam non accumsan nisl, et viverra nisl. Vestibulum 
-                    dapibus, est in elementum semper, mauris risus ultrices elit, sit amet consequat dui lacus 
-                    mattis metus. Pellentesque lorem eros, eleifend at justo a, ultrices condimentum orci.</p>
-                
-            </div>
-            <!-- Forms -->
-            <div id="forms" class="topic-three">
-                <h1>TOPIC THREE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
-                    a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
-                    diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
-                    Vestibulum nulla eros, placerat at tempus ac, hendrerit tempus turpis. Duis imperdiet 
-                    velit in odio egestas condimentum. Nam non accumsan nisl, et viverra nisl. Vestibulum 
-                    dapibus, est in elementum semper, mauris risus ultrices elit, sit amet consequat dui lacus 
-                    mattis metus. Pellentesque lorem eros, eleifend at justo a, ultrices condimentum orci.</p>
-            </div>
-            <!-- Semantic -->
-            <div id="semantic" class="topic-four">
-                <h1>TOPIC FOUR</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis sagittis ligula, 
-                    a tincidunt odio consequat ut. Morbi sagittis sed massa at hendrerit. Curabitur dictum 
-                    diam arcu, eu rutrum magna consectetur sed. Nullam nec turpis erat. Proin sed purus odio. 
-                    Vestibulum nulla eros, placerat at tempus ac, hendrerit tempus turpis. Duis imperdiet 
-                    velit in odio egestas condimentum. Nam non accumsan nisl, et viverra nisl. Vestibulum 
-                    dapibus, est in elementum semper, mauris risus ultrices elit, sit amet consequat dui lacus 
-                    mattis metus. Pellentesque lorem eros, eleifend at justo a, ultrices condimentum orci.</p>
-            </div>
+                <div class="table">
+                    <h1>Elements List</h1>
+                    <table>
+                        <!-- Metadata Table-->
+                        <thead>
+                            <th colspan="2">Metadata</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;head&gt;</td>
+                                <td>contains machine-readable information (metadata) about the document, such as title, scripts, and style sheets</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;link&gt;</td>
+                                <td>specifies relationships between the current document and an external resource. It is used to link to style sheets, fonts, and site icons</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <!-- Sectioning Table-->
+                        <thead>
+                            <th colspan="2">Sectioning</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>represents the content of an HTML document. There can be only one &lt;body&gt; element in a document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>indicates that the enclosed HTML provides contact information for a person or people, or for an organization</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;article&gt;</td>
+                                <td> represents a self-contained composition in a document, which is intended to be independently distributable or reusable. Examples include: a forum post or a user-submitted comment</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;footer&gt;</td>
+                                <td>footer for its nearest ancestor sectioning content or sectioning root element. It contains information about the author of the section, copyright data or links to related documents.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;header&gt;</td>
+                                <td>represents introductory content, typically a group of introductory or navigational aids. It may contain logo, a search form, an author name, and other elements</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h1-h6&gt;</td>
+                                <td> represent six levels of section headings</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;main&gt;</td>
+                                <td>represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;nav&gt;</td>
+                                <td>represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;section&gt;</td>
+                                <td>represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>indicates that the enclosed HTML provides contact information for a person or people, or for an organization</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <!-- Text Content Table-->
+                        <thead>
+                            <th colspan="2">Text Content</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>represents the content of an HTML document. There can be only one &lt;body&gt; element in a document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;figcaption&gt;</td>
+                                <td>indicates that the enclosed HTML provides contact information for a person or people, or for an organization</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;figure&gt;</td>
+                                <td>represents a self-contained composition in a document, which is intended to be independently distributable or reusable. Examples include: a forum post or a user-submitted comment</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;hr&gt;</td>
+                                <td>footer for its nearest ancestor sectioning content or sectioning root element. It typically contains information about the author of the section, copyright data or links to related documents</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;li&gt;</td>
+                                <td>footer for its nearest ancestor sectioning content or sectioning root element. It contains information about the author of the section, copyright data or links to related documents</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ol&gt;</td>
+                                <td>represents introductory content, typically a group of introductory or navigational aids. It may contain logo, a search form, an author name, and other elements</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt;</td>
+                                <td> represent six levels of section headings</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <!-- Inline Text Semantics Table-->
+                        <thead>
+                            <th colspan="2">Inline Text Semantics</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>with its href attribute, it creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;br&gt;</td>
+                                <td>produces a line break in text</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;cite&gt;</td>
+                                <td>used to mark up the title of a cited creative work</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;code&gt;</td>
+                                <td>displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;em&gt;</td>
+                                <td>marks text that has stress emphasis</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;mark&gt;</td>
+                                <td>represents text which is marked or highlighted for reference or notation purposes</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;strong&gt;</td>
+                                <td>indicates that its contents have strong importance, seriousness, or urgency</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <!-- Image and Multimedia Table-->
+                        <thead>
+                            <th colspan="2">Image and Multimedia</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;audio&gt;</td>
+                                <td>used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;img&gt;</td>
+                                <td>embeds an image into the document</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;video&gt;</td>
+                                <td>embeds a media player which supports video playback into the document</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table>
+                        <!-- Table Content Table-->
+                        <thead>
+                            <th colspan="2">Table Content</th>
+                        </thead>
+                        <!-- Table body -->
+                        <tbody>
+                            <tr>
+                                <td>&lt;caption&gt;</td>
+                                <td>specifies the caption (or title) of a table</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;col&gt;</td>
+                                <td>defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a colgroup element</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;colgroup&gt;</td>
+                                <td>defines a group of columns within a table</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;table&gt;</td>
+                                <td>displays information presented in a two-dimensional table comprised of rows and columns of cells containing data</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tbody&gt;</td>
+                                <td>encapsulates a set of table rows (tr elements), indicating that they comprise the body of the table </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;td&gt;</td>
+                                <td>defines a cell of a table that contains data</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tfoot&gt;</td>
+                                <td>defines a set of rows summarizing the columns of the table</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;th&gt;</td>
+                                <td>a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;thead&gt;</td>
+                                <td>defines a set of rows defining the head of the columns of the table</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>defines a row of cells in a table. The row's cells can then be established using a mix of td (data cell) and th (header cell) elements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </div>
     </main>
 </body>
